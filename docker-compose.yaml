@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  db:
+    container_name: springbootdb
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Spring1234
+      MYSQL_DATABASE: springbootdb
+    ports:
+      - "3306:3306"
